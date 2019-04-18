@@ -1,0 +1,72 @@
+:root {
+    --primary-background-color: #d0db97;
+    --secundary-background-color: #d8e1a9;
+    --tertiary-background-color: #7d8e3e;
+    --primary-font-color: #3a7d44;
+    --secundary-font-color: #503721;
+}
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, h4 {
+    color: var(--primary-font-color);
+}
+
+h1 {
+    font-size: 102px;
+}
+
+h2 {
+    font-size: 58px;
+    color: var(--secundary-font-color)
+}
+
+h3 {
+    font-size: 39px;
+}
+
+h4 {
+    font-size: 29px;
+}
+
+menu {
+    background-color: var(--tertiary-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+/* TODO substituir span por <a/> */
+menu > span {
+    font-size: 30px;
+    color: var(--secundary-font-color);
+    padding: 10px 25px;
+}
