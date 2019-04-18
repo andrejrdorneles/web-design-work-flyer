@@ -4,6 +4,8 @@
     --tertiary-background-color: #7d8e3e;
     --primary-font-color: #3a7d44;
     --secundary-font-color: #503721;
+    --primary-separator: #503721;
+    --secundary-separator: #3a7d44;
 }
 
 html, body {
@@ -13,22 +15,31 @@ html, body {
 }
 
 body {
-    background-color: var(--primary-background-color);
+    background-color: var(--secundary-background-color);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0;
 }
 
 header {
+    width: 100%;
+    background-color: var(--primary-background-color);
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px 0 20px;
 }
 
-h1, h2, h3, h4 {
+header > img {
+    height: 90px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, menu {
     margin: 0;
     padding: 0;
 }
@@ -51,7 +62,12 @@ h3 {
 }
 
 h4 {
+    width: 100%;
     font-size: 29px;
+    border-bottom: 1px solid var(--secundary-separator);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 menu {
@@ -61,7 +77,6 @@ menu {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0;
 }
 
 /* TODO substituir span por <a/> */
@@ -69,4 +84,39 @@ menu > span {
     font-size: 30px;
     color: var(--secundary-font-color);
     padding: 10px 25px;
+}
+
+section {
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 0 20px;
+    border-top: 1px solid var(--primary-separator);
+}
+
+section, section > div > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+section > div > article {
+    padding: 10px 30px;
+}
+
+section > article > p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article > img {
+    height: 70px;
+    padding: 10px;
 }
