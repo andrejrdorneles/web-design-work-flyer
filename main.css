@@ -128,7 +128,7 @@ article > img {
     padding: 10px;
 }
 
-@media (max-width: 800px) 
+@media (max-width: 1000px) 
 {
     section > div {
         flex-direction: column;
