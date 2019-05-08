@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Harmattan|Heebo|Holtwood+One+SC');
+:root {
+    --primary-background-color: #d0db97;
+    --secundary-background-color: #d8e1a9;
+    --tertiary-background-color: #7d8e3e;
+    --primary-font-color: #3a7d44;
+    --secundary-font-color: #503721;
+    --primary-separator: #503721;
+    --secundary-separator: #3a7d44;
+    width: 100%;
+}
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--secundary-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Harmattan', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0 20px;
+}
+
+header > img {
+    height: 90px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, menu {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, h4 {
+    color: var(--primary-font-color);
+}
+
+h1 {
+    font-size: 102px;
+    font-family: 'Holtwood One SC', serif;
+}
+
+h2 {
+    font-size: 68px;
+    color: var(--secundary-font-color)
+}
+
+h3 {
+    font-size: 39px;
+}
+
+h4 {
+    width: 100%;
+    font-size: 29px;
+    border-bottom: 1px solid var(--secundary-separator);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+menu {
+    background-color: var(--tertiary-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* TODO substituir span por <a/> */
+menu > span {
+    font-size: 40px;
+    color: var(--secundary-font-color);
+    padding: 5px 25px;
+    font-weight: bold;
+}
+
+section {
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 0 20px;
+    border-top: 1px solid var(--primary-separator);
+}
+
+section, section > div > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+section > div > article {
+    padding: 10px 30px;
+}
+
+article > p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+}
+
+article > img {
+    height: 70px;
+    padding: 10px;
+}
+
+@media (max-width: 1000px) 
+{
+    section > div {
+        flex-direction: column;
+    }
+}
